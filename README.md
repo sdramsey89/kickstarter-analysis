@@ -9,12 +9,15 @@ The purpose of this challenge was to provide further analysis of KickStarter cam
 ### Analysis
 
 ### Analysis of Outcomes Based on Launch Date
+![Outcomes based on launch date](Resources/Theater_Outcomes_vs_Launch.png)
 - For this deliverable, I created a **Year** column by using the year function based off of the table colum for  `=YEAR([@[Date Created Conversion]])`.
 - I then created a pivot table that filtered on Category and Years with Outcomes in the columns and Date Created in the rows. The values were Count of outcomes. The row labels were created by removing the rows automatically added by Excel.
 - Finally, is used the pivot table to create a line graph displaying the results.
 
 
 ### Analysis of Outcomes Based on Goals
+![Outcomes base on goals graph](Resources/Outcomes_vs_Goals.png)
+
 -For this deliverable, I used the function `=COUNTIFS` to calculate the amount of play projects that fell into each Goal range for Successful, Failed, and Cancled statuses. Below is an example for successful play projects that had a goal of less than $1000. 
 `=COUNTIFS(Kickstarter!$D:$D,"<1000",Kickstarter!$F:$F,"successful",Kickstarter!$R:$R,"plays")`
 Here is a second example show how the function was adapted to account for a range between two numbers and for a failed status.

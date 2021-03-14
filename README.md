@@ -18,7 +18,7 @@ The purpose of this challenge was to provide further analysis of KickStarter cam
 ### Analysis of Outcomes Based on Goals
 ![Outcomes base on goals graph](Resources/Outcomes_vs_Goals.png)
 
--For this deliverable, I used the function `=COUNTIFS` to calculate the amount of play projects that fell into each Goal range for Successful, Failed, and Cancled statuses. Below is an example for successful play projects that had a goal of less than $1000. 
+- For this deliverable, I used the function `=COUNTIFS` to calculate the amount of play projects that fell into each Goal range for Successful, Failed, and Cancled statuses. Below is an example for successful play projects that had a goal of less than $1000. 
 `=COUNTIFS(Kickstarter!$D:$D,"<1000",Kickstarter!$F:$F,"successful",Kickstarter!$R:$R,"plays")`
 Here is a second example show how the function was adapted to account for a range between two numbers and for a failed status.
 `=COUNTIFS(Kickstarter!$D:$D,">=1000",Kickstarter!$D:$D,"<=4999",Kickstarter!$F:$F,"failed",Kickstarter!$R:$R,"plays")`
@@ -33,12 +33,12 @@ A challenge that I encountered was figuring out why my **Outcomes Based on Goals
 ## Results
 
 - What are two conclusions you can draw about the Outcomes based on Launch Date?
-1 May had the must successful projects launched. In general, summer months had more sucessful projects. Based on these numbers, I would advise play Kickstarter projects to launch May through July.
-2 The winter months had fewer successful projects. December had the least amount of successful projects and is the only month where successes and fails were almost equal. If the project has to launch in the winter I would recommend launching in February as it has the highest number of successful projects (out of the winter months) and only 39 failed projects.
-- What can you conclude about the Outcomes based on Goals?
-1 If you are want to successfully fund your project you should make your goal less than $5000. Projects in these goal ranges were 76% and 73% successful.
-- What are some limitations of this dataset?
+1. May had the must successful projects launched. In general, summer months had more sucessful projects. Based on these numbers, I would advise play Kickstarter projects to launch May through July.
+2. The winter months had fewer successful projects. December had the least amount of successful projects and is the only month where successes and fails were almost equal. If the project has to launch in the winter I would recommend launching in February as it has the highest number of successful projects (out of the winter months) and only 39 failed projects.
+- What can you conclude about the Outcomes based on Goals?</br>
+1. If you are want to successfully fund your project you should make your goal less than $5000. Projects in these goal ranges were 76% and 73% successful.
+- What are some limitations of this dataset?</br>
 One noticeable limitation of the data set is the lack of projects with higher goals. This gap makes its difficult to analyze the success of these projects. Additionally, the data does not show how the projects were marketed or shared. It would be interesting to see the projects reach (how many page views, how many shares, where backers are located, etc.) These data points would provide further insight into what makes a project successfully funded.
 
-- What are some other possible tables and/or graphs that we could create?
+- What are some other possible tables and/or graphs that we could create?</br>
 Going off what I said above, I would make tables and graphs analyzing the affect that a staff pick or spotlight had on a project. These two features seem like they would have a positive correlation with successful projects.
